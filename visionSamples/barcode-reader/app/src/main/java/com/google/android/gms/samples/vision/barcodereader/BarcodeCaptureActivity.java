@@ -431,6 +431,22 @@ public final class BarcodeCaptureActivity extends AppCompatActivity implements B
 
     @Override
     public void onBarcodeDetected(Barcode barcode) {
-        //do something with barcode data returned
+        Barcode.DriverLicense dl = barcode.driverLicense;
+        if (dl == null) {
+            return;
+        }
+
+        Log.w(TAG, dl.licenseNumber);
+        this.showLicense(dl);
     }
+
+    private void showLicense(final Barcode.DriverLicense dl) {
+        final String info = new DriverLicenseHandler(dl).info();
+        this.runOnUiThread(new Runnable() {
+            public void run() {
+                Toast.makeText(BarcodeCaptureActivity.this, info, Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
 }
