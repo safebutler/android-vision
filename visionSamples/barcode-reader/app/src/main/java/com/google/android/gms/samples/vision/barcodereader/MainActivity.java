@@ -26,6 +26,7 @@ import android.widget.TextView;
 
 import com.google.android.gms.common.api.CommonStatusCodes;
 import com.google.android.gms.vision.barcode.Barcode;
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.safebutler.renters.R;
 
 /**
@@ -55,6 +56,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
         useFlash = (CompoundButton) findViewById(R.id.use_flash);
 
         findViewById(R.id.read_barcode).setOnClickListener(this);
+
+        String fcmToken = FirebaseInstanceId.getInstance().getToken();
+        Log.d(TAG, "FCM token: " + fcmToken);
     }
 
     /**
