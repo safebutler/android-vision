@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "552250261957",
+    "firebase_url": "https://rentersbutler.firebaseio.com",
+    "project_id": "rentersbutler",
+    "storage_bucket": "rentersbutler.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552250261957:android:49bf0e7e9faf6057",
+        "android_client_info": {
+          "package_name": "com.safebutler.renters"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552250261957-ie6p9jmdf4edhugl08dtn77c60c37gsn.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "552250261957-ie6p9jmdf4edhugl08dtn77c60c37gsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu1xw8TWu7sbQFmOII3oNGWxdFFFegWNI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
